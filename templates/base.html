@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>{% block 'title' %}{% endblock 'title' %}</title>
+	<link rel="icon" type="image/x-icon" href="/static/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <script src="/static/js/jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-dark top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <p>EXTRA 10% OFF ON FIRST ORDER</p>
+                </div>
+                <div class="col-auto right">
+                    <a href="#">
+                        <i class="fa-thin fa-heart"></i>
+                        <span>5</span>  
+                    </a>
+                    <a href="#">
+                        <i class="fa-thin fa-bag-shopping"></i>
+                        <span>2</span>
+                    </a>
+                    <a href="#"><i class="fa-thin fa-headphones"></i></a>
+                    <a href="#"><i class="fa-thin fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <h1 class="logo"><a href="/">TrendFusion</a></h1>
+                </div>
+                <div class="col-auto">
+                    <div class="menu-container">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Trending Collections</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+	
+
+    <main class="site">
+        <div class="page-content">
+            {% block 'banner' %}{% endblock 'banner' %}
+            
+            {% block 'content' %}{% endblock 'content' %}
+        </div>
+    </main>
+
+    
+    
+	
+
+    
+
+	<script src="/static/js/bootstrap.bundle.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="/static/js/script.js"></script>
+</body>
+
+</html>
